@@ -122,6 +122,48 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--text-align {
+  display: grid;
+  align-items: center;
+  column-gap: 6.4rem;
+}
+
+.heading-tertiary {
+  font-size: 2.6rem;
+}
+
+.flex--gap {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+}
+
 /**********************/
 /* Header */
 /**********************/
@@ -255,21 +297,36 @@ span {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: red;
 }
 
-.section-how div:nth-child(1) {
-  background-color: aqua;
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
 }
 
-.section-how div:nth-child(2) {
-  background-color: blue;
+.step-text-box {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
-.section-how div:nth-child(3) {
-  background-color: violet;
+.step-img-box {
+  /* align-self: center; */
+  justify-self: center;
+  display: contents;
 }
 
-.section-how div:nth-child(4) {
-  background-color: yellow;
+.step-img {
+  justify-self: center;
+  width: 35%;
+}
+
+.step-description {
+  line-height: 1.8;
+}
+
+.round-background {
+  background-color: ;
 }
